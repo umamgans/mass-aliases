@@ -5,7 +5,7 @@
 
 namespace Umam {
 	class AliasesDomain {
-		public $host, $user, $pass, $lists;
+		public $cp, $user, $pass, $lists;
 		public $color = [];
 		
 		function __construct() {
