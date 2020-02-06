@@ -21,8 +21,8 @@ namespace Umam {
 		
 		function aliases() {
 			$login = $this->curl($this->cp . ":2082/login", [
-				"user" => @$_GET["user"],
-				"pass" => @$_GET["pass"]
+				"user" => $this->user,
+				"pass" => $this->pass
 			]);
 			if($login["head"] == 200) {
 				echo "{$this->color["g"]}  [ info ] loged in cpanel{$this->color["w"]}\n";
